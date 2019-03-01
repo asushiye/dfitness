@@ -1,6 +1,9 @@
 # Ng2angle
 
+ npm start 
+
  ng serve --proxy-config proxy.conf.json
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.1.
 

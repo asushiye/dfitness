@@ -1,7 +1,343 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2916f5ca-182a-4acd-822a-33d2b2f974ee" name="Default Changelist" comment="" />
+    <list default="true" id="2916f5ca-182a-4acd-822a-33d2b2f974ee" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/1.c72abdfcabdd09f9357e.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/10.eec3a4837f39ea6d0044.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/11.9d8e3a41137d66c2f99e.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/12.123fd9ac61142efd7125.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/13.aa34581a4b758705025d.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/14.cd068e0c98f8690bd798.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/15.53bac0c11aad83882e8d.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/16.6a20574ad455cb439ef5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/17.1cb74a21c834486a1d10.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/18.12f0f9d641d0d553ed43.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/19.9cf53609f8e7d51284c7.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/2.e29b91557caf934eecb3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/20.0b816ea47bf4f14e0e39.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/21.be102eb067fde1ddd529.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/22.04f34d972d0351e1b55a.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/23.c0bdfd5bff261ee9087d.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/24.80688ec78057aaaf3ef3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/3.2969cf1b047dc9f0f713.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/3rdpartylicenses.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/4.3c0810d820b4f4d5074f.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/5.43268bdae8596efbae2c.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/6.4a97bab9804259b5c750.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/7.3e08be6fe4ac59662ad0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/8.19157cbe156192e2f664.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/9.ff221692d89522c58711.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/Simple-Line-Icons.0cb0b9c589c0624c9c78.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/Simple-Line-Icons.2fe2efe63441d830b1ac.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/Simple-Line-Icons.78f07e2c2a535c26ef21.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/Simple-Line-Icons.d2285965fe34b0546504.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/Simple-Line-Icons.f33df365d6d0255b586f.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/SourceSansPro-It.221e2885deff8820941c.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/SourceSansPro-It.61403c3297a48cfeaf13.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/SourceSansPro-It.804a5a72877fa3e658ba.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/SourceSansPro-It.otf.e242c0963b781c217058.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/SourceSansPro-It.ttf.9a310e9db68fa99e332f.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/SourceSansPro-Light.779f3bf41b852b5582d4.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/SourceSansPro-Light.a663a1ba5f49629a86f7.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/SourceSansPro-Light.b818f4970be48d5cba35.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/SourceSansPro-Light.otf.7d901d6001e12e3fd365.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/SourceSansPro-Light.ttf.9ac3a965ff8034e8c4f3.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/SourceSansPro-Regular.5e1d162e634a102d7da8.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/SourceSansPro-Regular.ac064e4ccb70dc3a2b5b.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/SourceSansPro-Regular.d165cf1a72ee7db500ec.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/SourceSansPro-Regular.otf.bbd955e1383a2ab66329.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/SourceSansPro-Regular.ttf.713df4a98683bbbc9e0d.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/SourceSansPro-Semibold.78667e5e4b54fea9bb85.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/SourceSansPro-Semibold.baa29e58bf6f07dcc7e3.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/SourceSansPro-Semibold.c8eb65424f2f0206e83a.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/SourceSansPro-Semibold.otf.99f66ff4eab8123edcaa.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/SourceSansPro-Semibold.ttf.9ef07ea6ee6d06f4fd48.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/filetree.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/apl/apl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/asciiarmor/asciiarmor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/asn.1/asn.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/asterisk/asterisk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/brainfuck/brainfuck.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/clike/clike.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/clojure/clojure.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/cmake/cmake.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/cobol/cobol.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/coffeescript/coffeescript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/commonlisp/commonlisp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/crystal/crystal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/css/css.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/cypher/cypher.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/d/d.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/dart/dart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/diff/diff.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/django/django.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/dockerfile/dockerfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/dtd/dtd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/dylan/dylan.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/ebnf/ebnf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/ecl/ecl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/eiffel/eiffel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/elm/elm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/erlang/erlang.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/factor/factor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/fcl/fcl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/forth/forth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/fortran/fortran.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/gas/gas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/gfm/gfm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/gherkin/gherkin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/go/go.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/groovy/groovy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/haml/haml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/handlebars/handlebars.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/haskell-literate/haskell-literate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/haskell/haskell.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/haxe/haxe.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/htmlembedded/htmlembedded.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/htmlmixed/htmlmixed.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/http/http.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/idl/idl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/javascript/javascript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/jinja2/jinja2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/jsx/jsx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/julia/julia.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/livescript/livescript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/lua/lua.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/markdown/markdown.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/mathematica/mathematica.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/mbox/mbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/meta.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/mirc/mirc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/mllike/mllike.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/modelica/modelica.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/mscgen/mscgen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/mumps/mumps.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/nginx/nginx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/nsis/nsis.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/ntriples/ntriples.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/octave/octave.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/oz/oz.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/pascal/pascal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/pegjs/pegjs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/perl/perl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/php/php.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/pig/pig.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/powershell/powershell.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/properties/properties.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/protobuf/protobuf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/pug/pug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/puppet/puppet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/python/python.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/q/q.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/r/r.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/rpm/changes/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/rpm/rpm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/rst/rst.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/ruby/ruby.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/rust/rust.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/sas/sas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/sass/sass.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/scheme/scheme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/shell/shell.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/sieve/sieve.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/slim/slim.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/smalltalk/smalltalk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/smarty/smarty.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/solr/solr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/soy/soy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/sparql/sparql.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/spreadsheet/spreadsheet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/sql/sql.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/stex/stex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/stylus/stylus.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/swift/swift.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/tcl/tcl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/textile/textile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/tiddlywiki/tiddlywiki.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/tiddlywiki/tiddlywiki.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/tiki/tiki.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/tiki/tiki.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/toml/toml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/tornado/tornado.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/troff/troff.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/ttcn-cfg/ttcn-cfg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/ttcn/ttcn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/turtle/turtle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/twig/twig.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/vb/vb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/vbscript/vbscript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/velocity/velocity.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/verilog/verilog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/vhdl/vhdl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/vue/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/webidl/webidl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/xml/xml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/xquery/xquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/yacas/yacas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/yaml-frontmatter/yaml-frontmatter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/yaml/yaml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/mode/z80/z80.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/source/another.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/source/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/source/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/theme/3024-day.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/theme/3024-night.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/theme/abcdef.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/theme/ambiance-mobile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/theme/ambiance.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/theme/base16-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/theme/base16-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/theme/bespin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/theme/blackboard.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/theme/cobalt.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/theme/colorforth.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/theme/dracula.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/theme/duotone-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/theme/duotone-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/theme/eclipse.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/theme/elegant.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/theme/erlang-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/theme/hopscotch.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/theme/icecoder.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/theme/isotope.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/theme/lesser-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/theme/liquibyte.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/theme/material.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/theme/mbo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/theme/mdn-like.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/theme/midnight.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/theme/monokai.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/theme/neat.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/theme/neo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/theme/night.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/theme/panda-syntax.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/theme/paraiso-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/theme/paraiso-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/theme/pastel-on-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/theme/railscasts.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/theme/rubyblue.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/theme/seti.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/theme/solarized.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/theme/the-matrix.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/theme/tomorrow-night-bright.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/theme/tomorrow-night-eighties.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/theme/ttcn.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/theme/twilight.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/theme/vibrant-ink.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/theme/xq-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/theme/xq-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/theme/yeti.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/codemirror/theme/zenburn.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/company.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/i18n/en.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/i18n/es_AR.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/img/angular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/img/back/asushiye1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/img/back/asushiye2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/img/back/logo - 副本.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/img/back/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/img/bg1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/img/bg10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/img/bg2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/img/bg3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/img/bg4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/img/bg5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/img/bg6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/img/bg7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/img/bg8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/img/bg9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/img/dummy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/img/home/door.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/img/lock-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/img/logo-single.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/img/mb-sample.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/img/mockup.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/img/preloader/back/preloader.empty - 副本.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/img/preloader/back/preloader.empty.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/img/preloader/back/preloader.full - 副本.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/img/preloader/back/preloader.full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/img/preloader/preloader.empty.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/img/preloader/preloader.full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/img/profile-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/img/user/01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/img/user/02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/img/user/03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/img/user/04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/img/user/05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/img/user/06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/img/user/07.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/img/user/08.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/img/user/09.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/img/user/10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/img/user/11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/img/user/12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/img/user/13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/img/user/asushiye.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/img/user/asushiye1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/server/ag-owinners.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/server/chart/area.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/server/chart/bar.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/server/chart/barstacked.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/server/chart/barstackedv2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/server/chart/donut.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/server/chart/line.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/server/chart/pie.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/server/chart/realtime.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/server/chart/spline.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/server/chart/splinev2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/server/chart/splinev3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/assets/server/mails.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/common.0e320654b4ab68d79182.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/data-table.b0aebd744ce7adb780a9.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/data-table.bce071e976865da51100.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/fa-brands-400.030846b7226a63373512.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/fa-brands-400.3f5a250e01aa2a2c757c.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/fa-brands-400.4291d4b6c28b411e821a.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/fa-brands-400.65e3be4eea08191c6404.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/fa-brands-400.8e04d338e5f3a734136e.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/fa-regular-400.222941bf21f9c9cb93ba.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/fa-regular-400.47d19eca4372c3489b27.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/fa-regular-400.6bf2d6c8c5f78cb9fc03.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/fa-regular-400.914437d606603d81e81a.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/fa-regular-400.d30b80185b2bd2b99ddc.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/fa-solid-900.140f41485edce6f713ab.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/fa-solid-900.4910ec733558f59bf058.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/fa-solid-900.813b8aee60f235b36887.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/fa-solid-900.e57e108a1ae04ca2b27c.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/fa-solid-900.e98a92ac980c63c46a7e.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/main.a241559a544960913f65.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/polyfills.07d1f10bc2152621ba63.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/preloader.empty.1a29ffcfc52429f82e8f.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/preloader.full.8a5744c3f12e0ca8e006.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/runtime.b8278b4b2d4e63032146.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/scripts.db494a4ff85f2b5f053c.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/styles.8dcce1097e496f90da00.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/summernote.a52b483f848b87d49a85.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/summernote.f9b5d834b2fea5a2b440.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/weathericons-regular-webfont.1cd48d78f06d33973d9d.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/weathericons-regular-webfont.4618f0de2a818e7ad3fe.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/weathericons-regular-webfont.4b658767da6bd92ce2ad.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/weathericons-regular-webfont.8cac70ebda3f23ce4721.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/out/weathericons-regular-webfont.ed0943f224d6a3987106.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ng2angle/src/assets/img/user/asushiye1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/conf/logging.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/conf/tomcat-users.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/conf/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2019-03-01" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ng2angle/src/app/core/settings/settings.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ng2angle/src/app/core/settings/settings.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ng2angle/src/app/layout/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ng2angle/src/app/layout/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ng2angle/src/app/layout/sidebar/userblock/userblock.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ng2angle/src/app/layout/sidebar/userblock/userblock.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ng2angle/src/app/routes/home/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ng2angle/src/app/routes/home/home/home.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ng2angle/src/app/routes/system/pages/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ng2angle/src/app/routes/system/pages/login/login.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ng2angle/src/app/routes/system/pages/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ng2angle/src/app/routes/system/pages/login/login.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ng2angle/src/assets/img/user/asushiye.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ng2angle/src/assets/img/user/asushiye.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ng2angle/src/assets/img/user/asushiye2.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ng2angle/out/assets/img/home/logon.jpg" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,18 +349,22 @@
     <session id="553186482">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.11" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.21" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="properties" value="1" />
+          <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Properties" value="1" />
+          <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -42,12 +382,21 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/property/dbms-dev.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+            <state relative-caret-position="418">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="146">
+              <caret line="17" column="57" lean-forward="true" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -84,6 +433,22 @@
         <option name="userSettingsFile" value="E:\6_Java\3_ArcheTool\maven\apache-maven-3.5.0\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="fintness" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="fintness" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
@@ -150,6 +515,21 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="property" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="fintness" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bfitness" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fintness" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bfitness" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -159,6 +539,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551422389784" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -179,7 +560,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Maven.tomcat7:run">
+  <component name="RunManager" selected="Maven.package">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -201,7 +582,22 @@
     <configuration name="package" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
+        <option name="myRunnerSettings">
+          <MavenRunnerSettings>
+            <option name="delegateBuildToMaven" value="false" />
+            <option name="environmentProperties">
+              <map />
+            </option>
+            <option name="jreName" value="#USE_PROJECT_JDK" />
+            <option name="mavenProperties">
+              <map />
+            </option>
+            <option name="passParentEnv" value="true" />
+            <option name="runMavenInBackground" value="true" />
+            <option name="skipTests" value="true" />
+            <option name="vmOptions" value="" />
+          </MavenRunnerSettings>
+        </option>
         <option name="myRunnerParameters">
           <MavenRunnerParameters>
             <option name="profiles">
@@ -226,7 +622,22 @@
     <configuration name="tomcat7:redeploy" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
+        <option name="myRunnerSettings">
+          <MavenRunnerSettings>
+            <option name="delegateBuildToMaven" value="false" />
+            <option name="environmentProperties">
+              <map />
+            </option>
+            <option name="jreName" value="#USE_PROJECT_JDK" />
+            <option name="mavenProperties">
+              <map />
+            </option>
+            <option name="passParentEnv" value="true" />
+            <option name="runMavenInBackground" value="true" />
+            <option name="skipTests" value="true" />
+            <option name="vmOptions" value="" />
+          </MavenRunnerSettings>
+        </option>
         <option name="myRunnerParameters">
           <MavenRunnerParameters>
             <option name="profiles">
@@ -306,51 +717,51 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1551416368218</updated>
-      <workItem from="1551416372005" duration="1273000" />
+      <workItem from="1551416372005" duration="2686000" />
+      <workItem from="1551420300145" duration="1999000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1273000" />
+    <option name="totallyTimeSpent" value="4685000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Designer" />
-      <window_info id="Image Layers" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Capture Tool" />
-      <window_info id="Alibaba Cloud Explorer" />
-      <window_info id="Web" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Spring" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Run with VisualVM" />
-      <window_info anchor="bottom" id="Java Enterprise" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Alibaba Cloud View" />
-      <window_info anchor="bottom" id="Debug with VisualVM" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Alibaba Cloud Explorer" order="7" />
+      <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3295082" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3065574" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Run with VisualVM" order="10" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Alibaba Cloud View" order="14" />
+      <window_info anchor="bottom" id="Debug with VisualVM" order="15" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.32980332" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,8 +773,15 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/resources/property/dbms-dev.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        <state relative-caret-position="418">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="17" column="57" lean-forward="true" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
         </state>
       </provider>
     </entry>
