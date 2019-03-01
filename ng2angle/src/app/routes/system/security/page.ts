@@ -1,0 +1,25 @@
+export class Page {
+    'content':Array<any>;
+    'pageable':{
+        'sort':{
+            'sorted':boolean,
+            'unsorted':boolean
+        };
+        'offset':number,
+        'pageSize':number,
+        'pageNumber':number,
+        'paged':boolean,
+        'unpaged':boolean
+    };
+    'last':boolean;
+    'totalPages':number;
+    'totalElements':number;
+    'number':number;
+    'size':number;
+    'sort':{
+        'sorted':boolean,
+        'unsorted':boolean
+    };
+    'first':boolean;
+    'numberOfElements':number
+}

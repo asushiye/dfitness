@@ -1,0 +1,82 @@
+<div class="card card-default">
+  <!-- <div class="card-header">Please enter the query content</div> -->
+  <div class="card-body">
+      <h4 class="mt0">查询条件</h4>
+      <form class="form-inline">
+          <label class="sr-only" for="title">title</label>
+          <select name="title" [(ngModel)]="selectTitle" class="form-control mb-2 mr-sm-2" id="title" >
+              <option *ngFor="let item of titleList" value="{{item.code}}">{{item.name}}</option>  
+          </select> 
+          <label class="sr-only" for="code">code</label>
+          <input #code class="form-control mb-2 mr-sm-2" id="code" type="text" placeholder="学号" />
+          <label class="sr-only" for="name">name</label>
+          <input #name class="form-control mb-2 mr-sm-2" id="name" type="text" placeholder="姓名" />
+          <!-- <label class="sr-only" for="specialty">specialty</label>
+          <input #specialty class="form-control mb-2 mr-sm-2" id="specialty" type="text" placeholder="专业" /> -->
+          <label class="sr-only" for="item">item</label>
+          <input #item class="form-control mb-2 mr-sm-2" id="item" type="text" placeholder="考核项目" />
+          <!-- <label class="sr-only" for="category">category</label>
+          <input #category class="form-control mb-2 mr-sm-2" id="category" type="text" placeholder="类别" /> -->
+  
+          <button class="mr-1 btn btn-labeled btn-primary mb-2" type="submit" (click)="onGetList(selectTitle, item.value, code.value, name.value, '','')">
+              <span class="btn-label"><i class="fa fa-search"></i>
+              </span>查询</button>
+          <button class="mr-1 btn btn-labeled btn-primary mb-2" type="button" (click)="onDownLoad(selectTitle, item.value, code.value, name.value, '','')">
+              <span class="btn-label"><i class="fa fa-download"></i>
+              </span>下载学生考核</button>
+      </form>
+  </div>
+</div>
+
+<div class="card card-default">
+  <div class="card-header">
+      <h4 class="mt0">更新操作</h4>
+      <form class="form-inline">
+          <label for="file" class="file-upload">
+              <button class="mr-1 btn btn-labeled btn-primary mb-2">
+                  <span class="btn-label"><i class="fa fa-upload"></i>
+                  </span>上传学生成绩</button>
+              <input id="file" type="file" (change)="onUploadXlsx(selectTitle, $event)" multiple="false" />
+          </label>
+          <button class="mb-2 mr-1 btn btn-labeled btn-primary" type="button" (click)="onSave()">
+            <span class="btn-label"><i class="fa fa-file"></i>
+            </span>保存</button>
+          
+          <button class="mb-2 mr-1 btn btn-labeled btn-warning" type="button" (click)="onClear()">
+            <span class="btn-label"><i class="fa fa-file"></i>
+            </span>清空成绩</button>
+          <button class="mr-1 btn btn-labeled btn-danger mb-2" type="button" (click)="onDelete(selectTitle)">
+              <span class="btn-label"><i class="fa fa-trash"></i>
+              </span>删除考核</button>
+          <input #filter type='text' class="mb-2 mr-1  form-control" placeholder='请输入过滤条件...'
+              (keyup)='onFilterTable(filter.value)' />
+          <!-- <input #ng2filter2 type='text' class="mb-2 mr-1  form-control" placeholder='Type to filter the code column...' (keyup)='onFilterColumn(ng2filter2.value)' /> -->
+      </form>
+  </div>
+  <div class="card-body">
+      <ngx-datatable #table class="bootstrap" 
+          [columnMode]="'force'" [rows]="rows" 
+          [headerHeight]=50 [rowHeight]="'auto'" [footerHeight]="'auto'" 
+          [scrollbarH]=true [scrollbarV]=false 
+          [externalPaging]=true 
+          [count]="rows.length" 
+          [messages]="tableMessage" 
+          [summaryRow]="true" [summaryPosition]="'bottom'" 
+          [summaryHeight]="'auto'">
+
+          <ngx-datatable-column name="姓名" prop="name" [width]="90"></ngx-datatable-column>
+          <ngx-datatable-column name="学号" prop="code" [width]="95"></ngx-datatable-column>
+          <ngx-datatable-column name="性别" prop="gender" [width]="55" [summaryFunc]="summaryForGender"></ngx-datatable-column>
+          <ngx-datatable-column name="考核项目" prop="item"></ngx-datatable-column>
+          <!-- <ngx-datatable-column name="category"></ngx-datatable-column> -->
+          <ngx-datatable-column name="单位" prop="unit" [width]="60"></ngx-datatable-column>
+          <ngx-datatable-column name="成绩" prop="value" [width]="100"></ngx-datatable-column>
+          <ngx-datatable-column name="优秀" prop="great" [width]="65"></ngx-datatable-column>
+          <ngx-datatable-column name="良好" prop="good" [width]="65"></ngx-datatable-column>
+          <ngx-datatable-column name="及格" prop="pass" [width]="65"></ngx-datatable-column>
+          <ngx-datatable-column name="评价" prop="comment" [width]="100"></ngx-datatable-column>
+          <ngx-datatable-column name="创建人" prop="createdBy"></ngx-datatable-column>
+          <ngx-datatable-column name="创建日期" prop="createdDate"></ngx-datatable-column>
+      </ngx-datatable>
+  </div>
+</div>

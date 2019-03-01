@@ -1,0 +1,86 @@
+<div class="card card-default">
+    <!-- <div class="card-header">Please enter the query content</div> -->
+    <div class="card-body">
+        <h4 class="mt0">查询条件</h4>
+        <form class="form-inline">
+            <label class="sr-only" for="code">code</label>
+            <input #code class="form-control mb-2 mr-sm-2" id="code" type="text" placeholder="学号" />
+            <label class="sr-only" for="name">name</label>
+            <input #name class="form-control mb-2 mr-sm-2" id="name" type="text" placeholder="姓名" />
+            <label class="sr-only" for="name">grade</label>
+            <input #grade class="form-control mb-2 mr-sm-2" id="grade" type="text" placeholder="年级" />
+            <label class="sr-only" for="name">specialty</label>
+            <input #specialty class="form-control mb-2 mr-sm-2" id="specialty" type="text" placeholder="专业" />
+            <button class="mr-1 btn btn-labeled btn-primary mb-2" type="submit" (click)="onGetListDto(code.value, name.value, grade.value, specialty.value)">
+                <span class="btn-label"><i class="fa fa-search"></i>
+                </span>查询</button>
+            <button class="mr-1 btn btn-labeled btn-primary mb-2" type="button" (click)="onDownLoadStudent(code.value, name.value, grade.value, specialty.value)">
+                <span class="btn-label"><i class="fa fa-download"></i>
+                </span>下载学生列表</button>
+        </form>
+    </div>
+</div>
+
+<div class="card card-default">
+    <div class="card-header">
+        <h4 class="mt0">更新操作</h4>
+        <form class="form-inline">
+            <button class="mb-2 mr-1 btn btn-labeled btn-primary" type="button" (click)="onDownloadStudentTemplate()">
+                <span class="btn-label"><i class="fa fa-file"></i>
+                </span>下载模版</button>
+            <label for="file" class="file-upload">
+                <button class="mr-1 btn btn-labeled btn-primary mb-2">
+                    <span class="btn-label"><i class="fa fa-upload"></i>
+                    </span>上传学生列表</button>
+                <input id="file" type="file" (change)="onUploadStudentXlsx($event)" multiple="false" />
+            </label>
+
+            <button class="mr-1 btn btn-labeled btn-danger mb-2" type="button" (click)="onDelete()">
+                <span class="btn-label"><i class="fa fa-trash"></i>
+                </span>删除</button>
+            <input #ng2filter type='text' class="mb-2 mr-1  form-control" placeholder='请输入过滤条件'
+                (keyup)='onFilterTable(ng2filter.value)' />
+            <!-- <input #ng2filter2 type='text' class="mb-2 mr-1  form-control" placeholder='Type to filter the code column...' (keyup)='onFilterColumn(ng2filter2.value)' /> -->
+        </form>
+    </div>
+    <div class="card-body">
+        <ngx-datatable #table class="bootstrap" 
+            [columnMode]="'force'" [rows]="rows" 
+            [headerHeight]=20 [rowHeight]="'auto'" [footerHeight]="'auto'" 
+            [scrollbarH]=false [scrollbarV]=false 
+            [externalPaging]=true 
+            [count]="pageConfig.totalSize" 
+            [offset]="pageConfig.page" 
+            [limit]="pageConfig.size" 
+            (page)='onGetListDto(code.value, name.value, grade.value, specialty.value, $event)'
+            [messages]="tableMessage" 
+            [selected]="selected" [selectionType]="'checkbox'" [selectAllRowsOnPage]="false"
+            (select)="onSelect($event)" 
+            [summaryRow]="true" [summaryPosition]="'bottom'" 
+            [summaryHeight]="'auto'">
+
+            <ngx-datatable-column [width]="30" [sortable]="false" [canAutoResize]="false" [draggable]="false"
+                [resizeable]="false" [headerCheckboxable]="true" [checkboxable]="true" [summaryFunc]="">
+            </ngx-datatable-column>
+            <ngx-datatable-column name="学号" prop="code"></ngx-datatable-column>
+            <ngx-datatable-column name="姓名" prop="name">
+                <!-- <ng-template ngx-datatable-header-template let-column="column">
+                    <strong>{{column.name}}</strong>
+                </ng-template> -->
+                <ng-template ngx-datatable-cell-template let-rowIndex="rowIndex" let-value="value" let-row="row">
+                    <span title="Double click to edit" (dblclick)="editing[rowIndex + '-name'] = true" *ngIf="!editing[rowIndex + '-name']">
+                        {{value}}
+                    </span>
+                    <input autofocus class="form-control" (blur)="updateValue($event, 'name', rowIndex)" *ngIf="editing[rowIndex+ '-name']"
+                        type="text" [value]="value" />
+                </ng-template>
+            </ngx-datatable-column>
+            <ngx-datatable-column name="性别" prop="gender" [summaryFunc]="summaryForGender"></ngx-datatable-column>
+            <ngx-datatable-column name="年级" prop="grade"></ngx-datatable-column>
+            <ngx-datatable-column name="专业" prop="specialty"></ngx-datatable-column>
+            <ngx-datatable-column name="创建人" prop="createdBy"></ngx-datatable-column>
+            <ngx-datatable-column name="创建日期" prop="createdDate"></ngx-datatable-column>
+        </ngx-datatable>
+
+    </div>
+</div>

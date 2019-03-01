@@ -1,0 +1,95 @@
+<div class="row">
+
+  <div class="col-xl-3 col-md-6">
+    <div class="card card-default">
+      <div class="card-header">
+        <h4 class="mt0">查询条件</h4>
+        <form class="form-inline">
+          <label class="sr-only" for="grade">grade</label>
+          <input #grade class="form-control mb-2 mr-sm-2" id="grade" type="text" placeholder="年级" />
+          <label class="sr-only" for="specialty">specialty</label>
+          <input #specialty class="form-control mb-2 mr-sm-2" id="specialty" type="text" placeholder="专业" />
+          <button class="mr-1 btn btn-labeled btn-primary mb-2" type="submit" (click)="onGetStudentList(grade.value, specialty.value)">
+            <span class="btn-label"><i class="fa fa-search"></i>
+            </span>查询</button>
+        </form>
+      </div>
+      <div class="card-body">
+        <ngx-datatable #table class="bootstrap" [columnMode]="'force'" [rows]="studentRows" [headerHeight]=50
+          [rowHeight]="'auto'" [footerHeight]="'auto'" [scrollbarH]=false [scrollbarV]=false [externalPaging]=true
+          [count]="studentRows.length" [messages]="studentMessage" [selected]="studentSelected" [selectionType]="'checkbox'"
+          [selectAllRowsOnPage]="false" (select)="onSelectStudent($event)">
+
+          <ngx-datatable-column [width]="30" [sortable]="false" [canAutoResize]="false" [draggable]="false"
+            [resizeable]="false" [headerCheckboxable]="true" [checkboxable]="true">
+          </ngx-datatable-column>
+          <ngx-datatable-column name="学号" prop="code"></ngx-datatable-column>
+          <ngx-datatable-column name="姓名" prop="name"></ngx-datatable-column>
+          <ngx-datatable-column name="性别" prop="gender"></ngx-datatable-column>
+        </ngx-datatable>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xl-3 col-md-6">
+    <div class="card card-default">
+      <div class="card-header">
+        <h4 class="mt0">查询条件</h4>
+        <form class="form-inline">
+            <label class="sr-only" for="item">item</label>
+            <input #item class="form-control mb-2 mr-sm-2" id="item" type="text" placeholder="考核项目" />
+            <label class="sr-only" for="category">category</label>
+            <input #category class="form-control mb-2 mr-sm-2" id="category" type="text" placeholder="类别" />
+            <button class="mr-1 btn btn-labeled btn-primary mb-2" type="submit" (click)="onGetItemList(item.value, category.value)">
+            <span class="btn-label"><i class="fa fa-search"></i>
+            </span>查询</button>
+        </form>
+      </div>
+      <div class="card-body">
+        <ngx-datatable class="bootstrap" [columnMode]="'force'" [rows]="itemRows" [headerHeight]=50
+          [rowHeight]="'auto'" [footerHeight]="'auto'" [scrollbarH]=false [scrollbarV]=false [externalPaging]=true
+          [count]="itemRows.length" [messages]="studentMessage" [selected]="itemSelected" [selectionType]="'checkbox'"
+          [selectAllRowsOnPage]="false" (select)="onSelectItem($event)">
+
+          <ngx-datatable-column [width]="30" [sortable]="false" [canAutoResize]="false" [draggable]="false"
+            [resizeable]="false" [headerCheckboxable]="true" [checkboxable]="true">
+          </ngx-datatable-column>
+          <ngx-datatable-column name="考核项目" prop="item"></ngx-datatable-column>
+          <ngx-datatable-column name="类别" prop="category"></ngx-datatable-column>
+          <ngx-datatable-column name="性别" prop="gender"></ngx-datatable-column>
+        </ngx-datatable>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xl-6 col-md-6">
+    <div class="card card-default">
+      <div class="card-header">
+        <h4 class="mt0">请输入标题来生成学生考核项目</h4>
+        <form class="form-inline">
+            <label class="sr-only" for="title">title</label>
+            <input #title class="form-control mb-2 mr-sm-2" id="title" type="text" placeholder="标题" />
+            <button class="mr-1 btn btn-labeled btn-primary mb-2" type="submit" (click)="onBuildScore(title.value)">
+            <span class="btn-label"><i class="fa fa-cogs"></i>
+            </span>生成</button>
+            <button class="mr-1 btn btn-labeled btn-primary mb-2" type="button" (click)="onSave(title.value)">
+            <span class="btn-label"><i class="fa fa-download"></i>
+            </span>保存</button>
+        </form>
+      </div>
+      <div class="card-body">
+        <ngx-datatable class="bootstrap" [columnMode]="'force'" [rows]="scoreRows" [headerHeight]=50
+          [rowHeight]="'auto'" [footerHeight]="'auto'" [scrollbarH]=false [scrollbarV]=false [externalPaging]=true
+          [count]="scoreRows.length" [messages]="studentMessage">
+          <ngx-datatable-column name="学号" prop="code"></ngx-datatable-column>
+          <ngx-datatable-column name="姓名" prop="name"></ngx-datatable-column>
+          <ngx-datatable-column name="性别" prop="gender"></ngx-datatable-column>
+          <ngx-datatable-column name="考核项目" prop="item"></ngx-datatable-column>
+          <ngx-datatable-column name="类别" prop="category"></ngx-datatable-column>
+        </ngx-datatable>
+      </div>
+    </div>
+  </div>
+
+</div>

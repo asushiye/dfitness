@@ -1,0 +1,130 @@
+<!-- <div class="content-heading">
+    <div>Data-Tables components
+        <small>Native and not wrapped angular2 based data-tables</small></div>
+</div> -->
+<!-- <alert [type]="'info'">None of this examples are based on the official jQuery-Datatables</alert> -->
+<!-- <h4 class="page-header">ng2 Table
+    <small>Simple table extension with sorting, filtering, paging... for Angular2 apps by ValorSoftware</small>
+</h4> -->
+
+<div class="card card-default">
+    <!-- <div class="card-header">Please enter the query content</div> -->
+    <div class="card-body">
+        <h4 class="mt0">search condition</h4>
+        <form class="form-inline">
+            <label class="sr-only" for="code">code</label>
+            <input #code class="form-control mb-2 mr-sm-2" id="code" type="text" placeholder="code" />
+            <label class="sr-only" for="name">name</label>
+            <input #name class="form-control mb-2 mr-sm-2" id="name" type="text" placeholder="name" />
+            <label class="sr-only" for="name">grade</label>
+            <input #grade class="form-control mb-2 mr-sm-2" id="grade" type="text" placeholder="grade" />
+            <label class="sr-only" for="name">specialty</label>
+            <input #specialty class="form-control mb-2 mr-sm-2" id="specialty" type="text" placeholder="specialty" />
+            <button class="mr-1 btn btn-labeled btn-primary mb-2" type="submit" 
+            (click)="onGetList(code.value, name.value, grade.value, specialty.value)">
+                <span class="btn-label"><i class="fa fa-search"></i>
+                </span>query</button>
+            <button class="mr-1 btn btn-labeled btn-primary mb-2" type="submit" 
+            (click)="onGetListEx(code.value, name.value, grade.value, specialty.value)">
+                <span class="btn-label"><i class="fa fa-search"></i>
+                </span>queryEx</button>
+            <button class="mr-1 btn btn-labeled btn-primary mb-2" type="submit" 
+            (click)="onGetListDto(code.value, name.value, grade.value, specialty.value)">
+                <span class="btn-label"><i class="fa fa-search"></i>
+                </span>queryDto</button>
+            <button class="mr-1 btn btn-labeled btn-primary mb-2" type="button" (click)="onDownLoadStudent(code.value, name.value, grade.value, specialty.value)">
+            <span class="btn-label"><i class="fa fa-download"></i>
+            </span>download</button>
+        </form>
+    </div>
+</div>
+
+<div class="card card-default">
+    <!-- <div class="card-header">Please enter the query content</div> -->
+    <div class="card-body">
+        <h4 class="mt0">Editing operation</h4>
+        <form class="form-inline">
+            <button class="mb-2 mr-1 btn btn-labeled btn-primary" type="button" (click)="onDemoDownXlsx()">
+                    <span class="btn-label"><i class="fa fa-file"></i>
+                    </span>demo</button>
+            <button class="mb-2 mr-1 btn btn-labeled btn-primary" type="button" (click)="onDownloadStudentTemplate()">
+                <span class="btn-label"><i class="fa fa-file"></i>
+                </span>Template</button>
+            <label for="file" class="file-upload">
+                <button class="mr-1 btn btn-labeled btn-primary mb-2">
+                    <span class="btn-label"><i class="fa fa-upload"></i>
+                    </span>upload</button>
+                <input id="file" type="file" (change)="onUploadStudentXlsx($event)" multiple="false" />
+            </label>
+
+            <button class="mb-2 mr-1 btn btn-labeled btn-primary" type="button">
+                <span class="btn-label"><i class="fa fa-plus-square"></i>
+                </span>plus</button>
+
+            <button class="mr-1 btn btn-labeled btn-primary mb-2" type="button">
+                <span class="btn-label"><i class="fa fa-edit"></i>
+                </span>edit</button>
+
+            <button class="mb-2 mr-1 btn btn-labeled btn-primary" type="button">
+                <span class="btn-label"><i class="fa fa-minus-square"></i>
+                </span>minus</button>
+            <button class="mr-1 btn btn-labeled btn-primary mb-2" type="button">
+                <span class="btn-label"><i class="fa fa-trash"></i>
+                </span>trash</button>
+
+            <button class="mr-1 btn btn-labeled btn-primary mb-2" type="button">
+                <span class="btn-label"><i class="fa fa-recycle"></i>
+                </span>recycle</button>
+            <button class="mr-1 btn btn-labeled btn-success mb-2" type="button">
+                <span class="btn-label"><i class="fa fa-check"></i>
+                </span>check</button>
+            <button class="mr-1 btn btn-labeled btn-danger mb-2" type="button">
+                <span class="btn-label"><i class="fa fa-plus-square"></i>
+                </span>error</button>
+            <button class="mr-1 btn btn-labeled btn-info mb-2" type="button">
+                <span class="btn-label"><i class="fa fa-exclamation"></i>
+                </span>Info</button>
+            <button class="mr-1 btn btn-labeled btn-warning mb-2" type="button">
+                <span class="btn-label"><i class="fas fa-exclamation-triangle"></i>
+                </span>Warning</button>
+
+        </form>
+    </div>
+</div>
+
+<div class="card card-default">
+    <div class="table-responsive">
+        <ng-table [config]="config" [rows]="rows" [columns]="columns" (tableChanged)="onChangeTable(config)"
+            (cellClicked)="onCellClick($event)"></ng-table>
+    </div>
+    <div class="card-footer">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="text-left">
+                    Current Record: {{pageConfig.realSize}}  Total Record: {{pageConfig.totalSize}} 
+                </div>
+            </div>
+                    
+            <div class="col-lg-6">
+                <div class="text-right">
+                    <pagination *ngIf="config.paging" class="pagination-sm" [(ngModel)]="pageConfig.page" [totalItems]="pageConfig.totalSize"
+                        [itemsPerPage]="pageConfig.size" [maxSize]="pageConfig.showPage" [boundaryLinks]="true"
+                        [rotate]="false" (pageChanged)="onGetList(code.value, name.value, grade.value, specialty.value, $event)"
+                        (numPages)="numPages = $event">
+                    </pagination>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <input *ngIf="config.filtering" placeholder="Filter all columns" [ngTableFiltering]="config.filtering"
+                    class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" (tableChanged)="onChangeTable(config)" />
+            </div>
+        </div>
+    </div>
+</div>
+
+{{pageConfig|json}}
+
+{{config|json}}
+
+
+<!-- <pre *ngIf="config.paging" class="card card-block card-header">total Item: {{length}} total Page: {{numPages}}</pre> -->

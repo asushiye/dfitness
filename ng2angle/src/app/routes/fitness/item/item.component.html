@@ -1,0 +1,75 @@
+<div class="card card-default">
+  <!-- <div class="card-header">Please enter the query content</div> -->
+  <div class="card-body">
+      <h4 class="mt0">查询条件</h4>
+      <form class="form-inline">
+          <label class="sr-only" for="item">item</label>
+          <input #item class="form-control mb-2 mr-sm-2" id="item" type="text" placeholder="考核项目" />
+          <label class="sr-only" for="category">category</label>
+          <input #category class="form-control mb-2 mr-sm-2" id="category" type="text" placeholder="类别" />
+          <label class="sr-only" for="gender">gender</label>
+          <input #gender class="form-control mb-2 mr-sm-2" id="gender" type="text" placeholder="性别" />
+          <button class="mr-1 btn btn-labeled btn-primary mb-2" type="submit" (click)="onGetList(item.value, category.value, gender.value)">
+              <span class="btn-label"><i class="fa fa-search"></i>
+              </span>查询</button>
+          <button class="mr-1 btn btn-labeled btn-primary mb-2" type="button" (click)="onDownLoad(item.value, category.value, gender.value)">
+              <span class="btn-label"><i class="fa fa-download"></i>
+              </span>下载考核项目</button>
+      </form>
+  </div>
+</div>
+
+<div class="card card-default">
+  <div class="card-header">
+      <h4 class="mt0">更新操作</h4>
+      <form class="form-inline">
+          <button class="mb-2 mr-1 btn btn-labeled btn-primary" type="button" (click)="onDownloadTemplate()">
+              <span class="btn-label"><i class="fa fa-file"></i>
+              </span>下载模版</button>
+          <label for="file" class="file-upload">
+              <button class="mr-1 btn btn-labeled btn-primary mb-2">
+                  <span class="btn-label"><i class="fa fa-upload"></i>
+                  </span>上传考核项目</button>
+              <input id="file" type="file" (change)="onUploadXlsx($event)" multiple="false" />
+          </label>
+
+          <button class="mr-1 btn btn-labeled btn-danger mb-2" type="button" (click)="onDelete()">
+              <span class="btn-label"><i class="fa fa-trash"></i>
+              </span>删除</button>
+          <input #filter type='text' class="mb-2 mr-1  form-control" placeholder='请输入过滤条件...'
+              (keyup)='onFilterTable(filter.value)' />
+          <!-- <input #ng2filter2 type='text' class="mb-2 mr-1  form-control" placeholder='Type to filter the code column...' (keyup)='onFilterColumn(ng2filter2.value)' /> -->
+      </form>
+  </div>
+  <div class="card-body">
+      <ngx-datatable #table class="bootstrap" 
+          [columnMode]="'force'" [rows]="rows" 
+          [headerHeight]=50 [rowHeight]="'auto'" [footerHeight]="'auto'" 
+          [scrollbarH]=false [scrollbarV]=false 
+          [externalPaging]=true 
+          [count]="pageConfig.totalSize" 
+          [offset]="pageConfig.page" 
+          [limit]="pageConfig.size" 
+          (page)='onGetList(item.value, category.value, gender.value, $event)'
+          [messages]="tableMessage" 
+          [selected]="selected" [selectionType]="'checkbox'" [selectAllRowsOnPage]="false"
+          (select)="onSelect($event)" 
+          [summaryRow]="true" [summaryPosition]="'bottom'" 
+          [summaryHeight]="'auto'">
+
+          <ngx-datatable-column [width]="30" [sortable]="false" [canAutoResize]="false" [draggable]="false"
+              [resizeable]="false" [headerCheckboxable]="true" [checkboxable]="true" [summaryFunc]="">
+          </ngx-datatable-column>
+          <ngx-datatable-column name="考核项目" prop="item"></ngx-datatable-column>
+          <ngx-datatable-column name="类别" prop="category"></ngx-datatable-column>
+          <ngx-datatable-column name="性别" prop="gender" [width]="35" [summaryFunc]="summaryForGender"></ngx-datatable-column>
+          <ngx-datatable-column name="单位" prop="unit" [width]="60"></ngx-datatable-column>
+          <ngx-datatable-column name="优秀" prop="great" [width]="50"></ngx-datatable-column>
+          <ngx-datatable-column name="良好" prop="good" [width]="50"></ngx-datatable-column>
+          <ngx-datatable-column name="及格" prop="pass" [width]="50"></ngx-datatable-column>
+          <ngx-datatable-column name="创建人" prop="createdBy"></ngx-datatable-column>
+          <ngx-datatable-column name="创建日期" prop="createdDate"></ngx-datatable-column>
+      </ngx-datatable>
+
+  </div>
+</div>

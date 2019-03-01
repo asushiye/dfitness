@@ -1,0 +1,18 @@
+<div class="content-heading">
+    <div>
+        Logger output
+        <small>{{ 'system debug log'}} !</small>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xl-12">
+        <!-- START widget-->
+        <div *ngFor="let log of Logger.contexts" class="card card-default" id="cardChart9">
+            <div class="card-body">
+                {{log}}
+            </div>
+        </div>
+        <!-- END widget-->
+    </div>
+</div>

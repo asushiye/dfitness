@@ -1,0 +1,27 @@
+{
+  "/api": {
+    "target": "http://localhost:8082",
+    "secure": false
+  },
+  "/student": {
+    "target": "http://localhost:8082",
+    "secure": false
+  },
+  "/item": {
+    "target": "http://localhost:8082",
+    "secure": false
+  },
+  "/score": {
+    "target": "http://localhost:8082",
+    "secure": false
+  },
+  "/code": {
+    "target": "http://localhost:8082",
+    "secure": false
+  },
+  "/img": {
+    "target": "http://localhost:8082",
+    "secure": false
+  }
+
+}

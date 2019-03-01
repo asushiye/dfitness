@@ -1,0 +1,63 @@
+<div class="card card-default">
+    <div class="card-header">
+        <h4 class="mt0">请选择考核标题</h4>
+        <form class="form-inline">
+            <label class="sr-only" for="title">请选择考核标题</label>
+            <select name="title" [(ngModel)]="selectTitle" class="form-control mb-2 mr-sm-2" id="title">
+                <option *ngFor="let item of titleList" value="{{item.code}}">{{item.name}}</option>
+            </select>
+            <button class="mr-1 btn btn-labeled btn-primary mb-2" type="submit" (click)="onQuery(selectTitle)">
+                    <span class="btn-label"><i class="fa fa-search"></i>
+                    </span>查询</button>
+            </form>
+    </div>
+</div>
+
+
+<div class="card card-default">
+    <div class="card-header">
+        <h4 class="mt0">学生考核成绩汇总</h4>
+        <form class="form-inline">
+            <button class="mr-1 btn btn-labeled btn-primary mb-2" type="button" (click)="onDownLoadSS()">
+                <span class="btn-label"><i class="fa fa-download"></i>
+                </span>下载</button>
+        </form>
+    </div>
+    <div class="card-body">
+        <ngx-datatable #table class="bootstrap" [columnMode]="'standard'" [rows]="siRows" [headerHeight]=50
+            [rowHeight]="'auto'" [footerHeight]="'auto'" [scrollbarH]=true [scrollbarV]=false [externalPaging]=true
+            [count]="siRows.length" [messages]="tableMessage">
+            <ngx-datatable-column *ngFor="let column of siColumns" name="{{column.name}}" prop="{{column.prop}}"
+                width="{{column.width}}"></ngx-datatable-column>
+        </ngx-datatable>
+
+    </div>
+</div>
+
+
+<div class="card card-default">
+    <div class="card-header">
+        <h4 class="mt0">考核项目汇总报表</h4>
+        <form class="form-inline">
+            <button class="mr-1 btn btn-labeled btn-primary mb-2" type="button" (click)="onDownLoadSI()">
+                <span class="btn-label"><i class="fa fa-download"></i>
+                </span>下载</button>
+        </form>
+    </div>
+    <div class="card-body">
+        <ngx-datatable #table class="bootstrap" [columnMode]="'standard'" [rows]="ssRows" [headerHeight]=50
+            [rowHeight]="'auto'" [footerHeight]="'auto'" [scrollbarH]=true [scrollbarV]=false [externalPaging]=true
+            [count]="ssRows.length" [messages]="tableMessage">
+
+            <ngx-datatable-column name="考核项目" prop="item" [width]=180></ngx-datatable-column>
+            <ngx-datatable-column name="总人数" prop="total" [width]=80></ngx-datatable-column>
+            <ngx-datatable-column name="缺勤人数" prop="notjoin" [width]=80></ngx-datatable-column>
+            <ngx-datatable-column name="参考人数" prop="sjoin" [width]=75></ngx-datatable-column>
+            <ngx-datatable-column name="参考率" prop="joinrate" [width]=80></ngx-datatable-column>
+            <ngx-datatable-column name="及格数" prop="pass" [width]=75></ngx-datatable-column>
+            <ngx-datatable-column name="及格率" prop="passrate" [width]=80></ngx-datatable-column>
+
+        </ngx-datatable>
+
+    </div>
+</div>
