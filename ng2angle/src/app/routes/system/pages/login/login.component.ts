@@ -51,7 +51,7 @@ export class LoginComponent implements OnInit {
                     this.authService.isAuthenticate = resp.status;
                     
                     console.log("print result");
-                    console.log(JSON.stringify(resp));
+                    // console.log(JSON.stringify(resp));
 
                     this.authService.authUser = resp.data; 
                     this.authService.authMenus = resp.data.permissionList; 
@@ -63,7 +63,7 @@ export class LoginComponent implements OnInit {
 
                     // this.menuService.loadMenuServer(this.authService.authMenus);
                     this.menuService.loadMenuFitness();
-                    //this.menuService.loadMenuMock();
+                    // this.menuService.loadMenuMock();
                     console.log(JSON.stringify(this.menuService.menuItems));
 
                     // Get the redirect URL from our auth service
