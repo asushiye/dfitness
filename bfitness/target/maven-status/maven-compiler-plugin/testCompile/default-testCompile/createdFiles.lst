@@ -1,8 +1,0 @@
-com\morange\business\fit\controller\FitItemCriterionControllerTest.class
-com\morange\business\fit\service\FitStudentServiceTest.class
-com\morange\shiro\security\service\LoginServiceTest.class
-com\morange\business\fit\service\FitStudentItemScoreServiceTest.class
-com\morange\demo\service\DemoControllerServiceTest.class
-common\SpringBaseTest.class
-com\morange\business\common\service\ComTypeCodeServiceTest.class
-com\morange\demo\service\StudentServiceTest.class
