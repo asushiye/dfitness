@@ -12,3 +12,4 @@
 127.0.0.1 - - [12/Mar/2019:10:58:19 +0800] "POST /score/StatisticsItemCol HTTP/1.1" 200 468 http-bio-8082-exec-2 166
 127.0.0.1 - - [12/Mar/2019:10:58:19 +0800] "POST /score/StatisticsStudent HTTP/1.1" 200 1565 http-bio-8082-exec-3 159
 127.0.0.1 - - [12/Mar/2019:10:58:20 +0800] "POST /score/StatisticsItem HTTP/1.1" 200 3191 http-bio-8082-exec-4 31
+127.0.0.1 - - [12/Mar/2019:11:01:44 +0800] "POST /api/login HTTP/1.1" 200 8074 http-bio-8082-exec-5 30
