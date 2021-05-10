@@ -1,175 +1,233 @@
-# 向导
+# guide
 
-		技术说明
-		打包部署
-			数据库部署
-			前后端整合部署
-			前后端分离部署
-		开发环境
+​    Technical description
+​    deployment
+​      Database deployment
+​      Front and rear end integration deployment
+​      Front and rear end split deployment
+​      development environment
 
-# 技术说明
+## Technical description
 
-dfitness将使用spring和angular进行web的开发，将前后分离
+Dfitness will use spring and angular to develop web, separating it from the front and back
 
-**bfitness**：Spring mvc源代码
+Bfitness: Spring MVC source code
 
-**ng2angle**：angular6源代码
+Ng2angle: angular6 source code
 
-**docs**：目录包含 安装文档，开发环境文档，用户手册文档
+Docs: the directory contains installation documents, development environment documents, user manual documents
 
-## 数据库部署
+## deployment
 
-安装mysql5.7数据库，创建数据库dfitness(utf8mb4 -- UTF-8 Unicode)，并运行数据库脚本fitness.sql。
+### Database deployment
 
-## 前后端整合部署
+Install mysql5.7 database, create database dfinness (utf8mb4 -- UTF-8 Unicode), and run database script fitness.sql.
 
-### angular编译打包
+Front and rear end integration deployment
 
-使用angular进去前端开发时，虽然前端独立了，但是在实际生产环境，前后端整合一起部署
+Angular compilation package
 
-下面将spring mvc + angular进行整合部署
+When using angular to enter the front-end development, although the front end is independent, it is deployed in the actual production environment with the front and rear end integrated
 
-由于angular编译打包输出的是静态文件，只要将所有静态文件拷贝到 **\src\main\webapp** 就可以
+Next, spring MVC + angular will be integrated and deployed
 
-1. 编译打包 `ng build --prod`
+Since the angular compilation package output is static files, you can copy all static files to \src\main\webapp
 
-2. 将静态资源拷贝到spring mvc项目的webapp目录下
+Compiling and packaging ng build --prod
 
-3. 设置spring-mvc 允许静态资源被访问
+Copy static resources to webapp directory of spring MVC project
 
-`<mvc:resources location="/" mapping="/**/*"/>` 表明 webapp目录下静态资源可以被访问，也可以指定目录来配置
+Set spring MVC to allow static resources to be accessed
 
-这里要注意的是：前后端的代码是分离，因此在spring配置上和jsp方式不一样的
+< mvc:resources location= "/" mapping= "/ * * /" / / > indicates that static resources in webapp directory can be accessed or directory can be specified to configure
 
-web服务器，使用tomcat8.0v版本
+Note here that the code at the front and back ends is separate, so it is not the same as JSP in spring configuration
 
-** 可以不可以省略输出文件的拷贝呢？**
+Web server, using tomcat8.0v version
 
-只要在angular编译打包时，指定路径就可以
+**Can you omit the copy of the output file**
 
- `ng build --prod --aot --outputPath=out`
+Specify a path as long as you compile the package in angular
 
+ng build --prod --aot --outputPath=out
 
-angular所有静态资源文件编译打包到out目录下，如果out目录不存在，则自动创建，如果已经存在，先删除在创建。
+All static resource files in angular are compiled and packaged into out directory. If out directory does not exist, it will be created automatically. If it already exists, delete it in creation first.
 
-将out目录所有文件拷贝java的webapp目录下，就可以启动系统
+Copy all files in out directory to webapp directory of Java, and then start the system
 
+String package deployment
 
-### string打包部署
+### Front and rear end split deployment
 
+Nginx service is used in the front end and Tomcat server is used in the back end
 
-## 前后端分离部署
+Front end deployment
 
-前端使用nginx服务，后端使用tomcat服务器
+### Nginx configuration
 
-### 前端部署
+The front-end server should solve the following problems
 
-#### nginx配置
+Index.html as backup page
 
-前端服务器，要解决如下问题
+Specify the IP, port, and document root of monitoring service
 
-1. index.html 作为后备页面
-2. 指定监听服务IP，端口，文档根目录
-3. 设置url拦截代理, 来解决不在同一个服务器上的跨域问题
-4. 将编译出来的所有文件拷贝root目录下
+Set up URL interception agent to solve cross domain problems that are not on the same server
 
-```nginx
+Copy all compiled files to root directory
+
+```pro
 server {
-    listen       4200;
-    server_name  127.0.0.1;
-    root   /fitness;
-    try_files $uri $uri/ /index.html;   
-    location /api {
-        proxy_set_header Host $http_host;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header REMOTE-HOST $remote_addr;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_pass http://127.0.0.1:8080/api;
-    }
+  listen 4200;
 
-    location /student {
-        proxy_set_header Host $http_host;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header REMOTE-HOST $remote_addr;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_pass http://127.0.0.1:8080/student;
-    }
+  server_ name 127.0.0.1;
 
-    location /item {
-        proxy_set_header Host $http_host;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header REMOTE-HOST $remote_addr;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_pass http://127.0.0.1:8080/item;
-    }
+  root /fitness;
 
-    location /score {
-        proxy_set_header Host $http_host;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header REMOTE-HOST $remote_addr;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_pass http://127.0.0.1:8080/score;
-    }
+  try_ files $uri $uri/ /index.html;
 
-    location /code {
-        proxy_set_header Host $http_host;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header REMOTE-HOST $remote_addr;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_pass http://127.0.0.1:8080/code;
-    }
-}
-```
+  location /api {
 
-上面需要分开配置多个路由，我们统一个路由api开头，这要修改下后端访问url地址
+  proxy_ set_ header Host $http_ host;
 
+  proxy_ set_ header X-Real-IP $remote_ addr;
 
-## 开发环境
+  proxy_ set_ header REMOTE-HOST $remote_ addr;
 
-### java开发环境
+  proxy_ set_ header X-Forwarded-For $proxy_ add_ x_ forwarded_ for;
 
-使用IntelliJ IDEA 2018.2.4 x64 打开bfitness 目录
+  proxy_ pass http://127.0.0.1 :8080/api;
 
+  }
 
-### angular开发环境
+  location /student {
 
-vscode 打开ng2angle目录
+  proxy_ set_ header Host $http_ host;
 
-安装依赖包：执行`npm install`
+  proxy_ set_ header X-Real-IP $remote_ addr;
 
-设置angular代理配置文件proxy.conf.json：
+  proxy_ set_ header REMOTE-HOST $remote_ addr;
 
-```typescript
-{
-  "/api": {
-    "target": "http://localhost:8082",
-    "secure": false
-  },
-  "/student": {
-    "target": "http://localhost:8082",
-    "secure": false
-  },
-  "/item": {
-    "target": "http://localhost:8082",
-    "secure": false
-  },
-  "/score": {
-    "target": "http://localhost:8082",
-    "secure": false
-  },
-  "/code": {
-    "target": "http://localhost:8082",
-    "secure": false
-  },
-  "/img": {
-    "target": "http://localhost:8082",
-    "secure": false
+  proxy_ set_ header X-Forwarded-For $proxy_ add_ x_ forwarded_ for;
+
+  proxy_ pass http://127.0.0.1 :8080/student;
+
+  }
+
+  location /item {
+
+  proxy_ set_ header Host $http_ host;
+
+  proxy_ set_ header X-Real-IP $remote_ addr;
+
+  proxy_ set_ header REMOTE-HOST $remote_ addr;
+
+  proxy_ set_ header X-Forwarded-For $proxy_ add_ x_ forwarded_ for;
+
+  proxy_ pass http://127.0.0.1 :8080/item;
+
+  }
+
+  location /score {
+
+  proxy_ set_ header Host $http_ host;
+
+  proxy_ set_ header X-Real-IP $remote_ addr;
+
+  proxy_ set_ header REMOTE-HOST $remote_ addr;
+
+  proxy_ set_ header X-Forwarded-For $proxy_ add_ x_ forwarded_ for;
+
+  proxy_ pass http://127.0.0.1 :8080/score;
+
+  }
+
+  location /code {
+
+  proxy_ set_ header Host $http_ host;
+
+  proxy_ set_ header X-Real-IP $remote_ addr;
+
+  proxy_ set_ header REMOTE-HOST $remote_ addr;
+
+  proxy_ set_ header X-Forwarded-For $proxy_ add_ x_ forwarded_ for;
+
+  proxy_ pass http://127.0.0.1 :8080/code;
+
   }
 
 }
 ```
 
-运行命令：`npm start` 或 `ng serve --proxy-config proxy.conf.json`
 
-编译打包：`npm build` 或 `ng build --prod`
 
+Above, multiple routes need to be configured separately. We need to unify the beginning of a routing API. This requires modifying the access URL address of the lower back end
+
+## development environment
+
+### Java development environment
+
+Open the bfitness directory using IntelliJ idea February 4, 2018 x64
+
+Angular development environment
+
+Vscode opens the ng2angle directory
+
+Install dependency package: execute NPM install
+
+Set the angular proxy profile proxy.conf.json:
+
+{
+
+"/api": {
+
+"target": " http://localhost :8082",
+
+"secure": false
+
+},
+
+"/student": {
+
+"target": " http://localhost :8082",
+
+"secure": false
+
+},
+
+"/item": {
+
+"target": " http://localhost :8082",
+
+"secure": false
+
+},
+
+"/score": {
+
+"target": " http://localhost :8082",
+
+"secure": false
+
+},
+
+"/code": {
+
+"target": " http://localhost :8082",
+
+"secure": false
+
+},
+
+"/img": {
+
+"target": " http://localhost :8082",
+
+"secure": false
+
+}
+
+}
+
+Run command: NPM start or ng serve - proxy config proxy.conf.json
+
+Compile package: NPM build or ng build --prod
