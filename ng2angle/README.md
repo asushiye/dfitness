@@ -54,24 +54,24 @@ file = file-excel,file
 
                <em class="fa-2x mr-2 fas fa-plus-square"></em>
                 <span>plus-square</span>
-
+    
                 <em class="fa-2x mr-2 fas fa-search"></em>
                 <span>search</span>
-
+    
                 <em class="fa-2x mr-2 fas fa-minus-square"></em>
                 <span>minus-square</span>
-
+    
                 <em class="fa-2x mr-2 fas fa-upload"></em>
                 <span>upload</span>
-
+    
                 <em class="fa-2x mr-2 fas fa-download"></em>
                 <span>download</span>
-
+    
                 <em class="fa-2x mr-2 fas fa-file-excel"></em>
                 <span>file-excel</span>
 
-                
-开发规约
+
+开发规约更多查看
 
 1. 组件中方法命名
 
